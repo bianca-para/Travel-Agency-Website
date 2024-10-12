@@ -1,0 +1,499 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* stilizare navbar */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    /* position: fixed; */
+    width: 100%;
+    height: 80px;
+    /* top: 0; */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color:skyblue ;
+}
+
+
+.meniu ul{
+    display: flex;
+    align-items: center;
+    
+} 
+.meniu ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.meniu ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+
+.meniu ul li a:hover {
+    border-bottom: 4px solid white;
+    color: #ff6347;
+}
+
+
+.submeniu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    background-color: #333;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.submeniu:hover {
+    display: block;
+}
+.meniu ul li:not(:hover) .submeniu {
+    display: none;
+}
+
+
+.meniu ul li:hover .submeniu {
+    display: block;
+}
+
+
+.logare a{
+    text-decoration: none;
+    color: white ;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 12px 30px;
+    border: 2px solid skyblue;
+} 
+
+
+.logare a:hover {
+    color: #ff6347;
+    background-color: skyblue;
+    transition: 0.6s;
+}
+
+
+.body{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)), url(imagine1.jpg);
+    padding: 80px 20px 20px;
+    background-position: center; 
+    background-size: cover; 
+
+}
+
+
+.heading{
+    width:30%;
+    text-align: center;
+    color: #fff;
+}
+
+.heading h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    animation: slide-in 2s ease-in-out;
+    margin-top: 50px;
+}
+
+.heading p {
+    font-size: 18px;
+    margin-bottom: 20px;
+
+}
+
+.heading a {
+    text-decoration: none;
+    padding: 14px 50px;
+    background-color: #ff6347;
+    color: white;
+    border-radius: 45px;
+    transition: background-color 0.3s ease;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.heading a:hover {
+    background-color: #ff4500;
+    letter-spacing: 1px;
+    transition: 0.6s;
+}
+
+
+
+#oferte h2{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+} 
+.tururi{
+    width: 70px;
+    display: contents;
+    justify-content: space-around;
+    
+}
+.locuri{
+    text-align: center;
+    margin: 20px;
+
+}
+
+.locuri h2{
+    color: red;
+    font-size: 30px;
+    letter-spacing: 3px;
+    border-radius: 1px;
+    padding: 30px 30px;
+    background-color: #fee;
+    margin-bottom: 10px;
+}
+
+
+
+.locuri a{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 12px;
+    padding: 12px 30px;
+    background-color: #fff;
+}
+.locuri a:hover{
+    background-color: #fee;
+    letter-spacing: 1px;
+    transition: 0.6s;
+
+}
+
+.locuri_oferte {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+    text-align: center;
+    width: calc(33.33% - 20px);
+}
+
+.locuri_oferte .loc_oferta {
+    width: 300px; 
+    margin-bottom: 20px; 
+}
+
+.locuri_oferte .loc_oferta img {
+    width: 100%; 
+    border-radius: 12px;
+    transform: transform 0.3s ease;
+}
+.locuri_oferte .loc_oferta img:hover{
+    transform:scale(1.1);
+}
+
+.locuri_oferte .titlu_oferta {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+.locuri_oferte .pret_oferta {
+    font-size: 16px;
+    color: black;
+    margin-top: 20px;
+}
+.rand_oferte {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+}
+
+#info h2 {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 36px; 
+    font-weight: bold; 
+    margin-left: 5%;
+    margin-top: 50px;
+}
+
+#info h3 {
+    font-family: 'Great Vibes', cursive; 
+    font-size: 28px; 
+    margin-left: 5%; 
+    color: rgb(90, 194, 235);
+}
+
+#despre-noi {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.item {
+    width: 30%;
+}
+
+.item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.item h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.item p {
+    font-size: 18px;
+    color: #666;
+}
+
+.poza {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 20px; 
+}
+
+.poza img {
+    max-width: 30%; 
+    height: auto; 
+    border-radius: 8px;
+}
+
+/* stilizare secțiuni */
+section {
+    padding: 60px 20px;
+}
+
+.container .item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container .item h2 {
+    margin-bottom: 10px;
+}
+
+.container .item img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.container .item p {
+    font-size: 16px;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+    .meniu ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .meniu ul li {
+        margin: 10px 0;
+    }
+    .body {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .heading {
+        width: 100%;
+    }
+    .locuri {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .locuri_oferte {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .locuri_oferte .loc_oferta {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container .item {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .tururi {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .locuri h2 {
+        font-size: 24px;
+    }
+    .locuri a {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        color:#ff4500;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        color:#ff6347;
+        transform: translateY(0);
+    }
+}
+
+.heading::before {
+    content: '✨ ';
+}
+
+.heading::after {
+    content: ' ✨';
+}
+
+#feedback {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: auto;
+}
+
+#feedback h2 {
+    text-align: center;
+}
+
+#feedback form {
+    display: flex;
+    flex-direction: column;
+}
+
+#feedback form label,
+#feedback form select,
+#feedback form textarea,
+#feedback form input[type="checkbox"],
+#feedback form button {
+    margin-bottom: 10px;
+}
+
+#feedback form label[for="vaApela"],
+#feedback form label input[type="checkbox"] {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#feedback form button {
+    align-self: center;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#feedback form button:hover {
+    background-color: #0056b3;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 600px; 
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    height: 300px; 
+    object-fit: cover; 
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
